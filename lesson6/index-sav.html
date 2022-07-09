@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Button and Story Input</title>
+    <meta name="description" content="Student Howell Lesson 2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--
+    <link href="../css/small.css" rel="stylesheet">
+    <link href="../css/medium.css" rel="stylesheet">-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            color: bisque;
+            background-color: rgb(71, 85, 74);
+        }
+        #todo_in {
+            width: 300px;
+        }
+
+        .gridbox {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: auto;
+            margin-left: 8em;*/
+        }
+
+        /*#todo_display {
+            background-color: rgb(68, 64, 76);
+            width: 300px;
+            height: 15px;
+            position: relative;
+            top: 1px;
+            left: 1px;
+            bottom: 1px;
+            padding: 1px;
+            margin: 2px;
+        }*/
+
+        button {
+            width: 100px;
+        }
+
+        /*.done {
+            margin-inline: 0px;
+            margin-bottom: 2px;
+            margin-top: 0px;
+        }*/
+        header {
+            margin-left: 14em;
+        }
+
+        footer {
+            background-color: black;
+            border: solid 1px bisque;
+            padding: 2px;
+        }
+
+        /*textarea {
+            color: bisque;
+            width: 600px;
+            height: 20px;
+            /* background-color: rgb(68, 64, 76);
+            background-color: rgb(68, 64, 76);
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <p>
+                <h3>Todos</h3>
+            </p>
+        </section>
+    </header>
+
+    <main>
+        <div class="gridbox">
+            <!--  <button onclick="showClick(this)"></button>
+            <section id="temp_display"></section>
+            <input id=name_input></input> -->
+                <input id="todo_in" placeholder="Input Todo Here">
+                <button onclick="displaytodoArr()">Submit Array Todo</button>
+                <button onclick="displayTodo()">Submit Todo</button>
+                <ul id="todo_display"></ul>
+                <ul id="todo_array_display"></ul>
+            <!--    <button onclick="saveTodo()">S</button>
+                <button onclick="loadTodo()">X</button>
+            <section id="todo_display"></section>-->
+        </div>
+    </main>
+
+   <!-- <footer>
+        &copy; 2022 | Layne Howell Inc | Al Rights Reserved |
+        <span id="todaydate"></span> </footer>
+
+   -->
+    <script src="../js/todaydate.js"></script>
+    <script src="./js/todos.js"></script>
+</body>
+
+</html>

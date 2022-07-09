@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Student Howell WDD230 Assignment Portal</title>
+  <meta name="description" content="Gnarville Chamber of Commerce Join Page">
+  <link rel="icon" type="image/png" href="img/smallmtb.png">
+  <link rel="shortcut icon" href="/faviconearth.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/small.css">
+  <link rel="stylesheet" href="./css/medium.css">
+  <link rel="stylesheet" href="./css/large.css">
+</head>
+
+<body>
+  <header>
+    <h1> <img class="iconimg" src="./img/smallmtb.webp" alt="Mountain Biker Logo">
+      Join the Gnarville Team<span id="slogan"></span></h1>
+    <headdate id="headerdate">Nothing Booger</headdate>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank"><img src="img/smallfacebook.png" alt="Facebook icon"></a>
+      <a href="https://twitter.com" target="_blank"><img src="img/smalltwitter.png" alt="Twitter icon"></a>
+      <a href="https://instagram.com" target="_blank"><img src="img/smallig.png" alt="Instagram icon"></a>
+    </div>
+  </header>
+  <div> <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    <h4 class="days"> It has been <span class="today"></span> days since your last visit</h4>
+   </div>
+  <div class="formcontainer">
+    <h1>Embrace the Gnar Below</h1>
+    <form method="get" action="thanks.html">
+      <fieldset>
+        <legend>Victim Information</legend>
+        <label class="top">First Name* <input type="text" name="fname" required></label>
+        <label class="top">Last Name* <input type="text" name="lname" required></label>
+        <label class="top">Cell Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+        <label class="top">Email* <input type="email" name="email" placeholder="gnarla@gnarville.com" required></label>
+        <label class="top">Business Name* <input type="text" name="bname" required></label>
+        <label class="top">Trail Name (Busines Position)<input type="text" name="biz" placeholder="Gnarla or Gnarl"
+            pattern="[A-Za-z-\x20]{7,}"></label>
+        <label class="top"><input type="hidden" id="ftime"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Shape Your Experience</legend>
+        <div class="gnarchoice">SHRED LEVEL</div>
+        <label class="sbs"><input type="radio" name="audience" value="beginner"> Spectator (No Charge)</label>
+        <label class="sbs"><input type="radio" name="audience" value="beginner"> Minor Gnar ($50)</label>
+        <label class="sbs"><input type="radio" name="audience" value="beginner"> Moderate Gnar ($100)</label>
+        <label class="sbs"><input type="radio" name="audience" value="beginner"> Extreme Gnar ($500 plus proof of
+          Insurance)</label>
+        <div class="gnarchoice">EQUIPMENT (Select all that apply)</div>
+        <label class="sbs"><input type="checkbox" name="code" value="yes"> Training Wheels $10/day</label>
+        <label class="sbs"><input type="checkbox" name="client" value="yes"> Knobbies--hardtail $30/day</label>
+        <label class="sbs"><input type="checkbox" name="editing" value="yes"> Full Suspension Trail Machine
+          $50/day</label>
+        <label class="sbs"><input type="checkbox" name="process" value="yes"> Insane Long Travel Downhill Rig
+          $100/day</label>
+        <label class="top">Optional: Rationale for entering the Gnar...</label>
+        <textarea class="top" name="bizdescr" rows="5" cols="30">
+      </textarea>
+  </div>
+  </fieldset>
+  <input type="submit" value="SUBMIT FORM TO BEGIN YOUR GNARVILLE JOURNEY!" class="submitBtn" href="./thanks.html">
+  </form>
+  <footer>
+    <img src="../img/smallmtb.png" alt="MTB"> &#160
+    <span id="yeartoday"> </span>
+    | Layne Howell WDD230 Project | Contact Gnarvillechamber@gnarville.com (888) 555-1212 All Rights Reserved<br>
+    <span id="todaydate"></span> 
+  </footer>
+
+  <script src="./js/visitors.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/todaydate.js"></script>
+  <script src="./js/burgertime.js"></script>
+  <script src="./js/windchill.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "biz": [
+    {
+      "name": "Alvin's Outrageous Outfitters",
+      "address": "1601 Ancestor Avenue",
+      "pitch": "Let Alvin calm your outrage with an outrageous adventure",
+      "phone": "541-555-1212",
+      "logo": "data/alvins.png"
+    },
+    {
+      "name": "Bradleys Bodacious Burgers",
+      "address": "2001 Button Boulevard",
+      "pitch": "The most bodacious burger in town (full discosure... the ONLY burger in town)",
+      "phone":  "541-555-1212",
+      "logo": "data/bradleys.png"
+    },
+    {
+      "name": "Charlies Chinese Buffet",
+      "address": "2011 Canvas Court",
+      "pitch": "If you are not fed up with Charlies Chow Main Buffet, the local strays will be!",
+      "phone":  "541-555-1212",
+      "logo": "data/charlies.png"
+    },
+    {
+      "name": "Doc's Dog Food Delivery",
+      "address": "1509 Div Drive",
+      "pitch": "Dogs love Docs",
+      "phone":  "541-555-1212",
+      "logo": "data/docs.png"
+    },
+    {
+      "name": "Eddies Ecclectic Engines",
+      "address": "3498 Element Egress",
+      "pitch": "Eddies Ecclectic Engines misfire in perfect order!",
+      "phone":  "541-555-1212",
+      "logo": "data/eddies.png"
+    },
+    {
+      "name": "Frank's Fabulous Frankfurters",
+      "address": "1838 Flexbox Field",
+      "pitch": "Find the most fragrant footlongs at Frank's ",
+      "phone":  "541-555-1212",
+      "logo": "data/franks.png"
+    },
+    {
+      "name": "Gary's Gigantic Grosbeaks",
+      "address": "3582 Grid Grade",
+      "pitch": "At Gary's, our Grosbeaks are not gross.  Fly one home today!",
+      "phone":  "541-555-1212",
+      "logo": "data/garys.png"
+    },
+    {
+      "name": "Harry's Handy Hydrators",
+      "address": "9453 HTML Hwy",
+      "pitch": "Our hydrators will hydrate you home",
+      "phone":  "541-555-1212",
+      "logo": "data/harrys.png"
+    },
+    {
+      "name": "Icabod's Interesting Insurgents",
+      "address": "8845 Iframe Island",
+      "pitch": "At Icabods even you can insurge your enjoyment",
+      "phone":  "541-555-1212",
+      "logo": "data/icabods.png"
+    },
+    {
+      "name": "John's Jovial Jousting",
+      "address": "4572 Javascript Junction  ",
+      "pitch": "Jounst your way to Joy with John's",
+      "phone":  "541-555-1212",
+      "logo": "data/johns.png"
+    },
+    {
+      "name": "Kenny's Cantalopes ",
+      "address": "6408 Kernel Keys",
+      "pitch": "At Kenny's you can't elope before you try our fruit to-go!",
+      "phone":  "541-555-1212",
+      "logo": "data/kennys.png"
+    },
+    {
+      "name": "Larry's Luggage ",
+      "address": "4433 Logic Loop",
+      "pitch": "Larry's Luggage defies Logic",
+      "phone":  "541-555-1212",
+      "logo": "data/larrys.png"
+    },
+    {
+      "name": "Moe's Master Link's ",
+      "address": "1899 Methods Mesa",
+      "pitch": "Let Moe's help you master your journey",
+      "phone":  "541-555-1212",
+      "logo": "data/moes.png"
+    },
+    {
+      "name": "Nancy's Neferious Nachos",
+      "address": "6729 Nopalitos Gnarway",
+      "pitch": "Nancy's nachos never negotiate",
+      "phone":  "541-555-1212",
+      "logo": "data/nancys.png"
+    }
+  ]
+}

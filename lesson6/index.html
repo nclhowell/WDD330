@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo List</title>
+    <meta name="description" content="Student Howell Lesson 2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="#" />
+    <link href="css/small.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="todoDIV" class="header">
+      <h2>To Do's App</h2>
+      <h4>Click X to remove todo item, Click anywhere in the todo to indicate complete todo</h4>
+      <input type="text" id="todoInput" placeholder="Enter New Todo here...">
+      <span onclick="newElement()" class="addBtn">Add New</span>
+      <span onclick="viewtodo(`donetodo`)" class="addBtn">View Done</span>
+      <span onclick="viewtodo(`deletedtodo`)" class="addBtn">View Deleted</span>
+      <span onclick="viewtodo(`todos`)" class="addBtn">View All</span>
+      <span onclick="blasttodo()" class="addBtn">Purge All</span>
+    </div>
+    <ul id="todoUL"></ul>
+
+    
+
+      
+        <!-- <div class="gridbox">
+            <button onclick="showClick(this)"></button>
+            <section id="temp_display"></section>
+            <input id=name_input></input>
+            <input id="todo_in" placeholder="Input Todo Here">
+            <button onclick="displaytodoArr()">Submit Array Todo</button>
+            <button onclick="displayTodo()">Submit Todo</button>
+            <ul id="todo_display"></ul>
+            <ul id="todo_array_display"></ul>
+                <button onclick="saveTodo()">S</button>
+                <button onclick="loadTodo()">X</button>
+            <section id="todo_display"></section>
+        </div> 
+
+    <footer>
+        &copy; 2022 | Layne Howell Inc | Al Rights Reserved |
+        <span id="todaydate"></span> </footer> -->
+</body>
+   
+<script src="./js/todos.js"></script>
+
+</html>

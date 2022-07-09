@@ -1,0 +1,472 @@
+* {
+	font-family: "Courgette", Ubuntu, sans-serif;
+	align-items: center;
+	padding: .3px;
+	text-align: center;
+}
+
+body {
+	background-size: cover;
+	box-sizing: border-box;
+	max-width: 100%;
+	display: grid;
+	grid-gap: 1em;
+	color: #63b3a1;
+	align-items: center;
+}
+
+.newdate {
+	font-size: .7em;
+	color: burlywood;
+	background-color: inherit;
+}
+
+p,
+#slogan {
+	color: whitesmoke;
+	background-color: transparent;
+	font-size: .8em;
+}
+
+.info {
+	margin: 1.5rem;
+}
+
+.info p {
+	color: #050708;
+	font-size: 1.5em;
+}
+
+.info h1 {
+	color: #050708;
+	font-size: 1.8em;
+	padding: .5em;
+}
+
+figcaption,
+#weathericon,
+#weather p {
+	background-color: transparent;
+	color: whitesmoke;
+	text-align: center;
+	margin-left: auto;
+	padding: .5em;
+	padding-bottom: 1em;
+
+}
+
+#weather {
+	background-color: #373a0e;
+	text-align: center;
+}
+
+
+.formcontainer {
+	justify-content: center;
+	max-width: 100%;
+	max-height: 100%;
+	background-color: whitesmoke; 
+	border-radius: 5%;
+	padding: 1em;
+}
+
+
+.grid-boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	margin: .1em;
+	grid-gap: .1em;
+	color: #63b3a1;
+	font-size: 1rem;
+}
+.grid-boxes h4 {
+	padding: .5em;
+	margin: .5em;
+}
+
+span.label,
+
+h1,
+.visits {
+	background-color: transparent;
+	color: burlywood;
+	font-size: 1.5rem;
+}
+
+h3 {
+	color: rgb(135, 222, 157);
+	max-width: 80;
+	background-color: transparent;
+	margin-bottom: .5rem;
+	padding: .5rem;
+	padding: .5rem;
+}
+
+
+
+header h4 {
+	color: whitesmoke;
+	max-width: 80;
+	background-color: transparent;
+	margin-bottom: .5rem;
+}
+
+#date {
+	background-color: #274156;
+	font-size: 1.2rem;
+	color: rgb(135, 222, 157);
+}
+
+header {
+	display: grid;
+	color: rgb(135, 222, 157);
+	background-color: #274156;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	text-align: center;
+	grid-gap: 1rem;
+	justify-content: auto;
+	padding: .5em;
+
+}
+
+.social {
+	justify-content: left;
+}
+
+footer {
+	color: whitesmoke;
+	grid-column: 1/-1;
+	background-color: #274156;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	justify-content: right;
+	align-items: center;
+	text-align: center;
+	border-radius: 10%
+}
+
+#todaydate,
+#yeartoday {
+	background-color: #274156;
+	color: whitesmoke;
+	justify-content: right;
+}
+
+picture {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.box {
+	text-align: left;
+	padding: .1rem;
+	margin: .1rem;
+	border-style: ridge;
+	box-shadow: 5px 5px 10px black;
+	border-radius: 10%;
+}
+
+section.box img {
+	margin: .3em;
+	max-height: 100%;
+	max-width: 100%;
+}
+section h4 {
+	color:#050708;
+}
+
+picture img {
+	max-height: 100%;
+	max-width: 100%;
+	background-color: transparent;
+	border-radius: 10%;
+}
+
+#menu1 {
+	margin: 10px;
+	width: 80%;
+}
+
+#menu1 li {
+	width: 130px;
+	float: left;
+	margin-left: 2px;
+}
+
+#spot3 {
+	background-color: #7EA2AA;
+	/*grid-column: 1/-1;
+	max-height: 70%;
+	margin: 1em;*/
+}
+
+#hero,
+#spot4 {
+	background-color: #31857a;
+}
+
+#news {
+	background-color: #274156;
+}
+
+#spot1 {
+	background-color: #373a0e;
+	max-width: fit-content;
+}
+
+#spot2, #spot6 {
+	background-color: #bdb066;
+}
+
+nav {
+	background-color: #050708;
+	text-align: center;
+	box-shadow: 0 2px 15px rgb(0, 0, 0);
+	margin: 0 auto;
+	border-radius: 10%;
+}
+
+nav ul {
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	list-style: none;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, rgb(48, 91, 110), transparent) top var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+
+nav a:hover {
+	--d: 75%;
+}
+
+.active {
+	color: rgb(107, 126, 113);
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(135, 222, 157);
+	;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a.ham::before {
+	content: " \2263 ";
+}
+
+.navigation a:hover {
+	color: white;
+	background-color: rgb(80, 139, 107);
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::after {
+	color: whitesmoke;
+}
+
+form fieldset {
+	margin: 2rem 0;
+	border: 4px solid rgb(80, 139, 107);
+	border-radius: 10px;
+	padding: .5rem 2%;
+	background-color: #31857a;
+}
+
+form legend {
+	color: #4b2c25;
+	background-color: burlywood;
+	border-radius: 10px;
+	margin: 0 1rem;
+	padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+	display: block;
+	padding-top: 1rem;
+	font-size: .9rem;
+	color: burlywood;
+	text-align: left;
+}
+
+form label.top input,
+form label.top select,
+form textarea {
+	display: block;
+	font-size: 1rem;
+	border: solid 1px rgb(105, 51, 51);
+	border-radius: 4px;
+	padding: .75rem;
+	color:whitesmoke;
+	background-color: #274156;
+	text-align: left;
+}
+
+form label.sbs {
+	display: block;
+	padding-top: .7rem;
+	padding-bottom: .7rem;
+	color: burlywood;
+	text-align: left;
+}
+
+form input.submitBtn {
+	display: block;
+	font-size: 1rem;
+	border: none;
+	border-radius: 20%;
+	padding: 1em;
+	color: burlywood;
+	background-color: rgb(28, 32, 51);
+	/*margin: 0 0 2rem 2%;*/
+	margin: 2em;
+	width: 90%;
+	max-width: 20rem;
+}
+
+form label.top input:required {
+	border-left: rgb(109, 18, 2) solid 6px;
+
+}
+
+form label.top input:required:valid {
+	border-left: rgb(20, 114, 20) solid 6px;
+}
+
+
+.class1 {
+	font: bolder;
+	font-size: 2rem;
+	color: burlywood;
+}
+
+.class2 {
+	font: bolder;
+	font-size: 4rem;
+	color: rgb(164, 166, 187);
+}
+
+.cards {
+	align-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,  1fr));
+	text-align: center;
+	grid-gap: 1em;
+	margin: 1em;
+	padding: 1em;
+	background-color:transparent;
+	background-color: #4a554a;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.cards section {
+	justify-content: center;
+	border: 1em;
+	border-radius: 2%;
+	padding: 1em;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	background-color: rgb(235, 230, 221);
+	color: burlywood;
+}
+section img {
+	object-position: 1ex 1ex 1ex 1ex;
+	border-radius: 10%;
+	/*margin-top: 5%;
+	margin-bottom: 20%;*/
+	max-width: 80%;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+section h1 { 
+	color: rgb(47, 40, 30);
+	font-family: Ubuntu;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	text-align: auto;
+	background: transparent;
+}
+section h2 { 
+	font-family: Ubuntu;
+	color: rgb(47, 40, 30);
+	font-size: 1rem;
+	text-align: auto;
+	margin: 1em;
+	background: transparent;
+}
+section p {
+	color: rgb(47, 40, 30);
+	text-align: left;
+	margin-left: 2em;
+	font-family: Courgette;
+	}
+
+ul {
+	color: whitesmoke; 
+	list-style-type: none;
+	font-weight: normal;
+}
+.bizname {
+	color: #ee865d;
+	font-weight: bold;
+}
+	
+.button {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.button:hover {
+	border: 4px solid #ee865d;
+}
+
+.listbutton {
+	color: black;
+	border: 3px solid rgb(95, 61, 18);
+}
+
+.gridbutton {
+	border: 3px solid rgb(95, 61, 18);
+}
+
+#todaydate {
+	color: burlywood;
+	justify-content: right;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

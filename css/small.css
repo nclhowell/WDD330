@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 30px;
+}
+
+body {
+	font-size: 1rem;
+	font-family: "Courgette", Ubuntu, sans-serif;
+	display: grid;
+	background-color: rgb(46, 76, 68);
+}
+
+/* phone (default) viewport size*/ 
+
+header, footer {
+	background-color: rgb(124, 158, 149);
+	padding: 10px;
+	text-align: center;
+}
+
+
+nav, main {
+	background-color: rgb(46, 76, 68);
+	margin: 0 auto;
+}
+h1 {
+	font-size: 1.1rem;
+}
+h2 {
+	color: #536878;
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, rgb(48, 91, 110), transparent) top /
+		var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+nav a:hover {
+	--d: 75%;
+}
+.active {
+	color: rgb(118, 165, 133);
+}
+main {
+	display: flex;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+main article {
+	margin: .5rem;
+	border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: #eee;
+}
+
+main article ul {
+margin: 1rem 0 0 1rem;
+}
+main picture {
+	display: none; 
+	margin: 0.5rem;
+}
+
+footer {
+	height: 3.5rem;
+}
+bigheader {
+	font-size: 2rem;
+}
+img {
+	max-width: 200px;
+	max-height: 200px;
+}

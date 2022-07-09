@@ -1,0 +1,13 @@
+/*html {
+    background-color: rgb(216, 154, 79);
+}*/
+.container {
+    background-color: rgb(233, 234, 238);
+   
+    margin: 1rem auto; display:grid; grid-template-columns: 1fr; max-width: 800px;
+    padding: 5%;
+    border-radius: 10%;
+}
+img { 
+    width: 250px; height: auto; margin: .5rem;
+}

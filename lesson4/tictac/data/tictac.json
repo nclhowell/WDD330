@@ -1,0 +1,85 @@
+{
+  "tictac": [
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position": "0",
+      "cell": "<input id=1 type=image src='data/a.png'></input>",
+      "cellx":"<button class='play' type='button' id=1> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=1> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "1",
+      "cell": "<button class='play' type='button' id=2> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=2> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=2> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "2",
+      "cell": "<button class='play' type='button' id=3> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=3> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=3> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "3",
+      "cell": "<button class='play' type='button' id=4> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=4> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=4> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "4",
+      "cell": "<button class='play' type='button' id=5> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=5> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=5> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "5",
+      "cell": "<button class='play' type='button' id=6> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=6> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=6> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "6",
+      "cell": "<button class='play' type='button' id=7> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=7> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=7> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "7",
+      "cell": "<button class='play' type='button' id=8> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=8> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=8> <input type=image src='data/o.png'/></button>;" 
+    },
+    {
+      "X": "",
+      "O": "",
+      "pitch": "",
+      "position":  "8",
+      "cell": "<button class='play' type='button' id=9> <input type=image src='data/a.png'/></button>",
+      "cellx":"<button class='play' type='button' id=9> <input type=image src='data/x.png'/></button>;",
+      "cello":"<button class='play' type='button' id=9> <input type=image src='data/o.png'/></button>;" 
+    }
+  ]
+}

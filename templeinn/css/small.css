@@ -1,0 +1,588 @@
+* {
+	font-family: "Paprika", Ubuntu, sans-serif;
+	font-size: 16px;
+	align-items: center;
+	padding: .1rem;
+	text-align: center;
+}
+
+.screen-box {
+	background: -webkit-radial-gradient(10% 30%, #274156, white);
+}
+
+body {
+	background-size: cover;
+	box-sizing: border-box;
+	max-width: 100%;
+	display: grid;
+	grid-gap: 1rem;
+	color: #274156;
+	background: -webkit-radial-gradient(90% 90%, white, #000000);
+}
+
+.grid-boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	margin: .1em;
+	grid-gap: 5rem;
+	color: whitesmoke;
+	font-size: 1rem;
+	background: -webkit-radial-gradient(20% 10%, white, #274156);
+	text-align: center;
+	border-radius: 3%;
+}
+
+iframe {
+	max-width: 100%;
+	max-height: 100%;
+
+}
+
+#amen ul li,
+#serv ul li {
+	text-align: left;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	padding: 1rem;
+}
+
+#formgrid {
+	text-align: left;
+	background: -webkit-radial-gradient(20% 10%, #274156, whitesmoke);
+}
+
+picture {
+	color: rgb(48, 91, 110);
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#alltemples h5 {
+	text-align: left;
+	margin-left: 4rem;
+	margin-right: rem;
+	color: black;
+	border-radius: 3%;
+}
+
+.box {
+	text-align: center;
+	padding: .3rem;
+	margin: .1rem;
+	border-style: ridge;
+	box-shadow: 5px 5px 10px black;
+	border-radius: 3%;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.newdate {
+	font-size: .7em;
+	color: burlywood;
+	background-color: inherit;
+}
+
+.quoted {
+	font-family: "Courgette";
+}
+
+.demo {
+	font-family: "Courgette";
+	background-color: whitesmoke;
+	color: #274156;
+}
+
+p,
+a,
+#slogan {
+	color: #274156;
+	background-color: transparent;
+	font-size: .8em;
+}
+
+.info {
+	margin: 1.5rem;
+}
+
+.info button {
+	font-size: 1.5rem;
+	padding-bottom: 2rem;
+	border-radius: 10%;
+	color: #274156;
+	background: -webkit-radial-gradient(whitesmoke, #274156);
+}
+
+.info button:hover {
+	border-radius: 10%;
+	border: 2px solid black;
+	background: whitesmoke;
+}
+
+.info p {
+	color: #050708;
+	font-size: 1.3em;
+	text-align: left;
+}
+
+.info h1 {
+	font-size: 1.8em;
+	padding: .5em;
+	text-align: left;
+}
+
+.info h3 {
+	font-size: 1.2em;
+	padding: .8em;
+	text-align: left;
+}
+
+figcaption,
+#weathericon,
+#weather p {
+	background-color: transparent;
+	color: whitesmoke;
+	text-align: center;
+	margin-left: auto;
+	padding: .5em;
+	padding-bottom: 1em;
+
+}
+
+.templebox {
+	text-align: left;
+	border: #000000;
+}
+
+#weather h2,
+#weather h3 {
+	color: burlywood;
+}
+
+.forecast {
+	color: #274156;
+}
+
+.gold {
+	color: burlywood;
+}
+
+#weather {
+	background: -webkit-radial-gradient(black 5%, white 70%, black, white);
+	;
+	text-align: center;
+	border-radius: 20%;
+}
+
+#conditions {
+	color: burlywood;
+	font: italic;
+}
+
+#services h2 {
+	color: whitesmoke;
+}
+
+
+.formcontainer {
+	justify-content: center;
+	max-width: 100%;
+	max-height: 100%;
+	background-color: whitesmoke;
+	background: -webkit-radial-gradient(20% 10%, white, #274156);
+	border-radius: 3%;
+	padding: 1em;
+}
+
+
+
+.grid-boxes h4 {
+	padding: .5em;
+	margin: .5em;
+}
+
+span.label,
+h1,
+h2,
+h3,
+h4,
+h5,
+.visits {
+	background-color: transparent;
+	color: #274156;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+h4 {
+	color: #274156;
+	font-size: .75rem;
+}
+
+h5 {
+	color: #274156;
+	font-size: .7rem;
+}
+
+
+header h1 {
+	color: whitesmoke;
+	max-width: 80;
+	background-color: transparent;
+	margin-bottom: .5rem;
+}
+
+#headerdate {
+	color: whitesmoke;
+}
+
+#date {
+	background-color: #274156;
+	font-size: 1.2rem;
+	color: rgb(135, 222, 157);
+}
+
+header {
+	display: grid;
+	color: whitesmoke;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	text-align: center;
+	grid-gap: 1rem;
+	justify-content: auto;
+	padding: .5em;
+
+}
+
+.social {
+	justify-content: left;
+}
+
+footer,
+footer a {
+	color: whitesmoke;
+	grid-column: 1/-1;
+	background-color: #274156;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+	justify-content: right;
+	text-align: center;
+	border-radius: 3%
+}
+
+
+section.box img {
+	margin: .3em;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+section h4 {
+	color: #050708;
+}
+
+picture img {
+	max-height: 100%;
+	max-width: 100%;
+	background-color: transparent;
+	border-radius: 3%;
+}
+
+#menu1 {
+	margin: 10px;
+	width: 80%;
+}
+
+#menu1 li {
+	width: 130px;
+	float: left;
+	margin-left: 2px;
+}
+
+#spot3 {
+	background-color: #7EA2AA;
+}
+
+#hero,
+#spot4 {
+	background-color: #31857a;
+}
+
+#news {
+	background-color: #274156;
+}
+
+#spot1 {
+	background-color: whitesmoke;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#spot1 img {
+	background-color: whitesmoke;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#spot2,
+#spot6 {
+	background-color: whitesmoke;
+	;
+}
+
+article {
+	color: #274156;
+}
+
+nav {
+	background-color: #274156;
+
+	text-align: center;
+	box-shadow: 0 2px 15px rgb(0, 0, 0);
+	margin: 0 auto;
+	border-radius: 2%;
+}
+
+nav ul {
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	list-style: none;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, rgb(48, 91, 110), transparent) top var(--d, 0) 10px no-repeat;
+	transition: 0.5s;
+}
+
+nav a:hover {
+	--d: 75%;
+}
+
+.active {
+	color: rgb(107, 126, 113);
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: burlywood;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a.ham::before {
+	content: " \2263 ";
+}
+
+.navigation a:hover {
+	color: #274156;
+	/*background-color: rgb(80, 139, 107);*/
+	background-color: burlywood;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::after {
+	color: whitesmoke;
+}
+
+form fieldset {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	text-align: center;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 2rem;
+	border: 4px solid #274156;
+	border-radius: 10px;
+	padding: .5rem 2%;
+	background: #274156;
+}
+
+form legend {
+	font-size: 1.2rem;
+	color: burlywood;
+	background-color: #274156;
+	border-radius: 3px;
+	margin: 1rem;
+	padding: .5rem;
+}
+
+form label.top,
+form div {
+	display: block;
+	padding-top: 1rem;
+	font-size: .9rem;
+	color: burlywood;
+	text-align: left;
+}
+
+form label.top input,
+form label.top select,
+
+form textarea {
+	display: block;
+	font-size: 1rem;
+	border: solid 1px; 
+	border-radius: 4px;
+	padding: .75rem;
+	color: whitesmoke;
+	background-color: #274156;
+	text-align: left;
+}
+
+form label.sbs {
+	display: block;
+	padding-top: .7rem;
+	padding-bottom: .7rem;
+	color: burlywood;
+	text-align: left;
+}
+
+form input.submitBtn {
+	display: block;
+	font-size: 1rem;
+	border: none;
+	border-radius: 20%;
+	padding: 1em;
+	color: burlywood;
+	background-color: rgb(28, 32, 51);
+	margin: 2em;
+	width: 90%;
+	max-width: 20rem;
+}
+
+form label.top input:required {
+	border-left: rgb(109, 18, 2) solid 6px;
+
+}
+
+form label.top input:required:valid {
+	border-left: rgb(20, 114, 20) solid 6px;
+}
+
+
+.class1 {
+	font: bolder;
+	font-size: 2rem;
+	color: burlywood;
+}
+
+.class2 {
+	font: bolder;
+	font-size: 4rem;
+	color: rgb(164, 166, 187);
+}
+
+
+section img {
+	object-position: 1ex 1ex 1ex 1ex;
+	border-radius: 3%;
+	margin-bottom: 20%;
+	max-width: 80%;
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+section h1 {
+	color: rgb(47, 40, 30);
+	font-family: Ubuntu;
+	font-weight: bolder;
+	font-size: 1.5rem;
+	text-align: auto;
+	background: transparent;
+}
+
+section h2 {
+	font-family: Ubuntu;
+	color: rgb(47, 40, 30);
+	font-size: 1rem;
+	text-align: auto;
+	margin: 1em;
+	background: transparent;
+}
+
+section p {
+	color: rgb(47, 40, 30);
+	text-align: left;
+	margin-left: 2em;
+	font-family: Paprika;
+}
+
+ul {
+	color: whitesmoke;
+	list-style-type: none;
+	font-weight: normal;
+}
+
+.bizname {
+	color: #ee865d;
+	font-weight: bold;
+}
+
+.button {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.button:hover {
+	border: 4px solid #ee865d;
+}
+
+.listbutton {
+	color: black;
+	border: 3px solid rgb(95, 61, 18);
+}
+
+.gridbutton {
+	border: 3px solid rgb(95, 61, 18);
+}
+
+#todaydate {
+	color: burlywood;
+	justify-content: right;
+}
+
+#tagline {
+	color: whitesmoke;
+	font-style: italic;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

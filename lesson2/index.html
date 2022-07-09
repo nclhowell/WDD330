@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="Student Howell Lesson 2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--
+    <link href="../css/small.css" rel="stylesheet">
+    <link href="../css/medium.css" rel="stylesheet">-->
+</head>
+
+<body>
+    <header>
+        <section>
+            <p>
+                <h1>Calculator<h1>
+            </p>
+        </section>
+    </header>
+    <main>
+        <h3>Input First Num Here</h3>
+        <input id="input1"></input>
+        <h3>Input Second Num Here</h3>
+        <input id="input2"></input><br><br>
+        <button onclick="processAdder(this)">Accumulate</button>
+        <button onclick="processAdd(this)">+</button>
+        <button onclick="processSub(this)">-</button>
+        <button onclick="processMul(this)">*</button>
+        <button onclick="processDiv(this)">/</button>
+
+        <div id="result_display"></div>
+    </main>
+    <script>
+// Standard function declaratioin using function name processAdder 
+        function processAdder(theButtonClicked) {
+            let n = Number(input1.value);
+            let sum = 0;
+            for (i = 1; i <= n; i++) {
+                sum += i;
+            }
+            document.getElementById("result_display").innerHTML = `${sum}`
+        }
+
+// Arrow function using variable processAdd
+        const processAdd = (theButtonClicked) => {
+            let n = Number(input1.value);
+            let n2 = Number(input2.value);
+            let sum = 0;
+            document.getElementById("result_display").innerHTML = `${n + n2}`
+        }
+
+// Function expression using variable processSub
+        const processSub = function (theButtonClicked) {
+            let n = Number(input1.value);
+            let n2 = Number(input2.value);
+            let sum = 0;
+            document.getElementById("result_display").innerHTML = `${n - n2}`
+        }
+
+        function processMul(theButtonClicked) {
+            let n = Number(input1.value);
+            let n2 = Number(input2.value);
+            let sum = 0;
+            document.getElementById("result_display").innerHTML = `${n * n2}`
+        }
+
+        function processDiv(theButtonClicked) {
+            let n = Number(input1.value);
+            let n2 = Number(input2.value);
+            let sum = 0;
+            document.getElementById("result_display").innerHTML = `${n / n2}`
+        }
+
+    </script>
+
+    <style>
+        body {
+            color: bisque;
+            background-color: rgb(71, 85, 74);
+            padding: 10px;
+        }
+
+        #result_display {
+            background-color: rgb(68, 64, 76);
+            width: 200px;
+            height: 50px;
+            position: relative;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: solid 1px bisque;
+        }
+
+        footer  {
+            background-color: black;
+            border: solid 1px bisque;
+            padding: 2px;
+        }
+
+        input, button{
+            border: solid 1px bisque;
+            color: bisque;
+            background-color: rgb(68, 64, 76);
+        }
+    </style>
+
+
+
+    <footer>
+        &copy; 2022 | Layne Howell Inc | Al Rights Reserved |
+        <span id="todaydate"></span> </footer>
+
+    <script src="../js/todaydate.js"></script>
+    <!-- <script src="../js/ninja.js"></script>-->
+
+</body>
+
+</html>

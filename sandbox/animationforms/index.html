@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>animations/forms/menus sandbox</title>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+<form>
+    <label for="choose">Would you prefer a banana or cherry? (required)</label>
+    <input id="choose" name="i_like" required pattern="[Bb]anana|[Cc]herry">
+    <button>Submit</button>
+</form>
+
+<body>
+    <div id='square'></div>
+    <div></div>
+    <div id='latlong'></div>
+    <br>
+    <form name='search' action='/search'>
+        <input name='searchInput'>
+        <button type='submit'>Search</button>
+    </form>
+    <p>Super Powers:</p>
+<label for='flight'>Flight:
+    <input type='checkbox' id='flight' value='Flight' name='powers'>
+</label>
+<label for='strength'>Super Strength:
+    <input type='checkbox' id='strength' value='Strength' name='powers'>
+</label>
+<label for='speed'>Super Speed:
+    <input type='checkbox' id='speed' value='Super Speed' name='powers'>
+</label>
+<label for='energy'>Energy Blasts:
+    <input type='checkbox' id='energy' value='Energy Blasts' name='powers'>
+    </label>
+<label for='telekinesis'>Telekinesis:
+    <input type='checkbox' id='telekinesis' value='Telekinesis' name='powers'>
+</label>
+
+    <script src='main.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+/* Desktop View Size */
+@media only screen and (min-width: 1080px) {
+	* {
+		font-size:20px;
+	}
+	.grid-boxes {
+		grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+		margin: .2rem;
+		grid-gap: .1rem;
+	}
+
+	#weather {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	body {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	footer {
+		grid-column: 1fr 1fr 2fr 1fr;
+	}
+
+	.navigation {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.navigation li {
+		display: block;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	h1 {
+		max-width: 100%;
+		margin: auto;
+		font-size: 2rem;
+	}
+
+	h2 {
+		max-width: 100%;
+		margin: auto;
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		max-width: 100%;
+		margin: auto;
+		font-size: 1rem;
+	}
+
+	h4 {
+		max-width: 100%;
+		margin: auto;
+		font-size: .75rem;
+	}
+
+	h1 #days {
+		max-width: 100%;
+		margin: auto;
+		font-size: .5rem;
+	}
+
+	nav,
+	main,
+	footer,
+	form,
+	header {
+		max-width: 100;
+	}
+
+	form label.sbs {
+		padding: .4rem 0;
+	}
+
+}

@@ -1,0 +1,66 @@
+/* Desktop View Size */ 
+@media only screen and (min-width: 1080px) {
+	/* .grid-boxes {
+		display: grid;
+	 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		margin: .2em;
+		grid-gap: .3em;
+		color: #63b3a1;
+		font-size: 2rem;
+	}*/
+
+	body{
+		margin-left:4em;
+		margin-right:4em;
+	}
+	footer {
+		grid-column: 1fr 1fr 2fr 1fr;
+	}
+	.navigation {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.navigation li {
+		display: block;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	h1 {
+		max-width: 100%;
+		margin: auto;
+		font-size: 3rem;
+	}
+	h2 {
+		max-width: 100%;
+		margin: auto;
+		font-size: 2.5rem;
+	}
+	h3 {
+		max-width: 100%;
+		margin: auto;
+		font-size: 2.0rem;
+	}
+	h4 {
+		max-width: 100%;
+		margin: auto;
+		font-size: 1.5rem;
+	}
+	h1 #days {
+		max-width: 100%;
+		margin: auto;
+		font-size: .5rem;
+	}
+	
+    nav, main, footer, form, header {
+        max-width: 100;
+    }
+
+	form label.sbs {
+    padding: .4rem 0;
+	}
+
+}

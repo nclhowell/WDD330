@@ -1,0 +1,67 @@
+{
+  "rider": [
+    {
+      "name": "Gnarnold Huge-Air Nielson",
+      "address": "1601 Ancestor Avenue",
+      "pitch": "Owns the most freqent life-flight trips in a week",
+      "phone": "541-555-1212",
+      "logo": "data/alvins.jpg"
+    },
+    {
+      "name": "Gnarlita Giant-drop Jenson",
+      "address": "2001 Button Boulevard",
+      "pitch": "Only rider to ever jump Gnarville Falls on a bike!",
+      "phone":  "541-555-1212",
+      "logo": "data/bradleys.jpg"
+    },
+    {
+      "name": "Carl Numerous-Calamity Christenson",
+      "address": "2011 Canvas Court",
+      "pitch": "Only rider to survive the 24-hour Gnarls Jr challenge",
+      "phone":  "541-555-1212",
+      "logo": "data/charlies.jpg"
+    },
+    {
+      "name": "Dave Airmail Daniels",
+      "address": "1509 Div Drive",
+      "pitch": "Dave is the first rider to climb Mt Gnar and ride back down in 1 day",
+      "phone":  "541-555-1212",
+      "logo": "data/docs.jpg"
+    },
+    {
+      "name": "Eddie Eccentric-Elevation Edwards",
+      "address": "3498 Element Egress",
+      "pitch": "Eddie is the only rider to execute a backflip combined with a Gnac Gnac over Deadmans Leap",
+      "phone":  "541-555-1212",
+      "logo": "data/eddies.jpg"
+    },
+    {
+      "name": "Frankie Fabulous-Flipper Fletcher",
+      "address": "1838 Flexbox Field",
+      "pitch": "Frank owns the Gnarville record for the longest ride after consuming 10 Gnar-Dogs at his resturaunt",
+      "phone":  "541-555-1212",
+      "logo": "data/franks.jpg"
+    },
+    {
+      "name": "Gary Gigantic-Air Grossburg",
+      "address": "3582 Grid Grade",
+      "pitch": "Gary owns the record for the longest recorded jump in Gnarville, over the Gnarville River Canyon",
+      "phone":  "541-555-1212",
+      "logo": "data/garys.jpg"
+    },
+    {
+      "name": "Harry Hardly-Stops Hendrix",
+      "address": "9453 HTML Hwy",
+      "pitch": "Harry has ridden the longest non-stop ride ever recorded in Gnarville, 72 hours plus 30 seconds",
+      "phone":  "541-555-1212",
+      "logo": "data/harrys.jpg"
+    },
+    {
+      "name": "Iggy Ill-Advised-Air Ingles",
+      "address": "8845 Iframe Island",
+      "pitch": "Iggy owns the record for the most broken collarbones in Gnarville History (8 and counting)",
+      "phone":  "541-555-1212",
+      "logo": "data/icabods.jpg"
+    }
+  ]
+}

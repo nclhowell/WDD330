@@ -1,0 +1,57 @@
+/* Tablet View Size  */
+
+@media only screen and (min-width: 780px) {
+	*{
+		font-size: 18px;
+	}
+	.grid-boxes {
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		margin: .1em;
+		grid-gap: .2em;
+		font-size: 1.5rem;
+	}
+
+	header {
+		display: grid;
+		color:whitesmoke;
+		box-shadow: 5px 5px 5px rgb(0, 0, 0);
+		grid-gap: 1rem;
+		padding: .5em;
+		grid-auto-flow: column;
+	
+	}
+	picture {
+		border-radius: 10%;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+
+	picture img {
+		border-radius: 1%;
+		object-fit: fill;
+		background-color: transparent;
+		box-shadow: none;
+	}
+
+	footer {
+		grid-template-columns: 1fr 1fr;
+	}
+	alltemples h5 {
+		text-align: left;
+		margin-left: 20rem;
+		margin-right:20rem;
+		color: black;
+		border-radius: 3%;
+	}
+
+	.formcontainer {
+		display: grid;
+		justify-content: center;
+		max-width: 100%;
+		max-height: 100%;
+		background-color: whitesmoke;
+		border-radius: 5%;
+		padding: 1em;
+	}
+}
