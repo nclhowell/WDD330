@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
@@ -17,36 +18,52 @@
 <div class="container">
     <div class="box"></div>
     <div class="box overlay"></div>
-  </div>
+</div>
 
 <body>
-<header>
-    <h1>Sandbox Page</h1>
-            <section>
-                <h2>
-                    It appears that today is <span id="message2"></span>
-                </h2>
-                <h3>
-                    <span id="message1"></span>
-                </h3>
-            </section>
-        </header>
+    <header>
+        <h1>Sandbox Page</h1>
+        <section>
+            <h2>
+                It appears that today is <span id="message2"></span>
+            </h2>
+            <h3>
+                <span id="message1"></span>
+            </h3>
+        </section>
+    </header>
 
     <main>
 
-   <!--     <div id="screenoverlay"></div> -->
+        <!--     <div id="screenoverlay"></div> -->
         <nav>
             <ul id="menu">
                 <li><a id="toggleMenu">&equiv;</a></li>
                 <li><a href="./" class="active">Home</a></li>
             </ul>
         </nav>
-            <section>
-                <h1>Below is your Geo info acquired by the IP address assigned to your device</h1>
-                <div id="geo_info">
-                </div>
-            </section>
-   <!-- <picture>
+        <div id="googleMap" style="width:1200px;height:400px;"></div>
+
+        <script>
+            function myMap() {
+                var mapProp = {
+                    center: new google.maps.LatLng(42.7046, -121.9959),
+                    zoom: 14
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+        </script>
+
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5lw5HxVBoEwW7l8NGH06boKJd47UydFI&callback=myMap">
+        </script>
+
+        <section>
+            <h1>Below is your Geo info acquired by the IP address assigned to your device</h1>
+            <div id="geo_info">
+            </div>
+        </section>
+        <!-- <picture>
         <img id="clearwater" src='img/1smallClearwater.jpg' fat-data='img/fat-data/bigClearwater.jpg' alt='big slow Clearwater'>
     </picture>
     <picture>
@@ -59,11 +76,11 @@
     <picture>
         <img id="fortbragg" src='img/1smallFortb.jpg' fat-data='img/fat-data/bigFortb.jpg' alt='big slow bigFortb'>
     </picture>-->
-    <section id="hero_info"></section>
+        <section id="hero_info"></section>
     </main>
 
     <footer>
-        &copy; 2022 | Layne Howell Inc | Al Rights Reserved 
+        &copy; 2022 | Layne Howell Inc | Al Rights Reserved
         <span id="todaydate"></span>
     </footer>
 
