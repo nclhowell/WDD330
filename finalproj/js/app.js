@@ -71,10 +71,12 @@ function output(myArray) {
   let prevlat = document.createElement('h3');
   lat.textContent = "Your lattitude is " + myArray.latitude;
   prevlat.textContent = "Your previous lattitude was " + localStorage.prevlat;
-  console.log(`Previous Latatude: ${localStorage.prevlat}`);
+  // console.log(`Previous Latatude: ${localStorage.prevlat}`);
 
   let lon = document.createElement('h3');
+  let prevlon = document.createElement('h3');
   lon.textContent = "Your longitude is " + myArray.longitude;
+  prevlon.textContent = "Your previous longitude was " + localStorage.prevlon;
 
   let city = document.createElement('h3');
   city.textContent = "Your city is " + myArray.city;
@@ -105,7 +107,9 @@ function output(myArray) {
 
   article.appendChild(lat);
   localStorage.setItem("prevlat", myArray.latitude);
+  localStorage.setItem("prevlon", myArray.longitude);
   prevarticle.appendChild(prevlat);
+  prevarticle.appendChild(prevlon);
   article.appendChild(lon);
   article.appendChild(city);
   article.appendChild(region_iso_code);
