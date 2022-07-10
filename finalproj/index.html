@@ -8,24 +8,16 @@
     <title>Student Howell WDD330 Sandbox Week 7</title>
     <meta name="description" content="Student Howell WDD330 Sandbox Week 7 ">
     <link rel="icon" type="image/png" href="img/smallmtb.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
-    <!-- <link rel="stylesheet" href="css/medium.css"> -->
 </head>
-<div class="container">
-    <div class="box"></div>
-    <div class="box overlay"></div>
-</div>
 
 <body>
     <header>
-        <h1>Sandbox Page</h1>
+        <h1>Geo Fun</h1>
         <section>
             <h2>
-                It appears that today is <span id="message2"></span>
+                Today is <span id="message2"></span>
             </h2>
             <h3>
                 <span id="message1"></span>
@@ -35,58 +27,32 @@
 
     <main>
 
-        <!--     <div id="screenoverlay"></div> -->
-        <nav>
+        <!--        <nav>
             <ul id="menu">
                 <li><a id="toggleMenu">&equiv;</a></li>
                 <li><a href="./" class="active">Home</a></li>
             </ul>
         </nav>
-        <div id="googleMap" style="width:1200px;height:400px;"></div>
-
-        <script>
-            function myMap() {
-                var mapProp = {
-                    center: new google.maps.LatLng(42.7046, -121.9959),
-                    zoom: 14
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            }
-        </script>
-
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5lw5HxVBoEwW7l8NGH06boKJd47UydFI&callback=myMap">
-        </script>
-
-        <section>
-            <h1>Below is your Geo info acquired by the IP address assigned to your device</h1>
-            <div id="geo_info">
-            </div>
+    -->
+        <section class="twocolumngrid">
+            <div id="geoinfo"></div>
+            <div id="prevgeoinfo"></div>
         </section>
-        <!-- <picture>
-        <img id="clearwater" src='img/1smallClearwater.jpg' fat-data='img/fat-data/bigClearwater.jpg' alt='big slow Clearwater'>
-    </picture>
-    <picture>
-        <img id="spence" src='img/1smallSpence.jpg' fat-data='img/fat-data/bigSpence.jpg' alt='big slow Spence'>
-    </picture>
-    <picture>
-    <picture>
-        <img id="crescent" src='img/1smallCCsunset.jpg' fat-data='img/fat-data/bigCCsunset.jpg' alt='big slow bigCCsunset'>
-    </picture>
-    <picture>
-        <img id="fortbragg" src='img/1smallFortb.jpg' fat-data='img/fat-data/bigFortb.jpg' alt='big slow bigFortb'>
-    </picture>-->
-        <section id="hero_info"></section>
+        <div id="googleMap" style="width:1200px;height:400px;"> </div>
     </main>
-
+    <div class="container">
+        <div class="box"></div>
+        <div class="box overlay"></div>
+    </div>
     <footer>
         &copy; 2022 | Layne Howell Inc | Al Rights Reserved
         <span id="todaydate"></span>
     </footer>
-
+    <!--     <script
+           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5lw5HxVBoEwW7l8NGH06boKJd47UydFI&callback=myMap" defer>
+      </script>-->
     <script src="js/app.js"></script>
     <script src="js/todaydate.js"></script>
-
 </body>
 
 </html>

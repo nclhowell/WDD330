@@ -1,36 +1,3 @@
-let images = document.querySelectorAll("[fat-data]");
-
-// This is the section where intersection IntersectionObserver tracks the viewport and loads the big images only
-// When the image becomes part of the browser view
-// Someday I will fully learn what is going on here... 
-function preloadImage(img) {
-  let src = img.getAttribute("fat-data");
-  if (!src) {
-    return;
-  }
-  img.src = src;
-}
-
-let imgOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px 300px 0px"
-};
-
-let imgObserver = new IntersectionObserver((entries, imgObserver) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      return;
-    } else {
-      preloadImage(entry.target);
-      imgObserver.unobserve(entry.target);
-    }
-  })
-}, imgOptions);
-
-images.forEach(image => {
-  imgObserver.observe(image);
-})
-
 // Declare and initialize a new variable to hold the current date
 let date_today = new Date();
 
@@ -51,7 +18,6 @@ if (day_today < 6 && day_today > 0) {
 } else {
   motd = "Woohoo....it's the weekend (but homework lurks)";
 }
-
 
 let dy = "";
 
@@ -99,6 +65,16 @@ let myArray = [];
 function output(myArray) {
   // Create elements and add attributes to the img element
   let article = document.createElement('article');
+  let prevarticle = document.createElement('article');
+
+  let lat = document.createElement('h3');
+  let prevlat = document.createElement('h3');
+  lat.textContent = "Your lattitude is " + myArray.latitude;
+  prevlat.textContent = "Your previous lattitude was " + localStorage.prevlat;
+  console.log(`Previous Latatude: ${localStorage.prevlat}`);
+
+  let lon = document.createElement('h3');
+  lon.textContent = "Your longitude is " + myArray.longitude;
 
   let city = document.createElement('h3');
   city.textContent = "Your city is " + myArray.city;
@@ -127,6 +103,10 @@ function output(myArray) {
 
   // grab JSON values then populate elements
 
+  article.appendChild(lat);
+  localStorage.setItem("prevlat", myArray.latitude);
+  prevarticle.appendChild(prevlat);
+  article.appendChild(lon);
   article.appendChild(city);
   article.appendChild(region_iso_code);
   article.appendChild(region);
@@ -134,9 +114,10 @@ function output(myArray) {
   article.appendChild(ip);
   article.appendChild(con_type);
   article.appendChild(country);
-  article.appendChild(img);
+  // article.appendChild(img);
 
-  document.querySelector('#geo_info').appendChild(article);
+  document.querySelector('#geoinfo').appendChild(article);
+  document.querySelector('#prevgeoinfo').appendChild(prevarticle);
 }
 
 let url = "https://ipgeolocation.abstractapi.com/v1/?api_key=c3b5f6ec9f4e4920a988180cede6238c";
@@ -159,44 +140,10 @@ fetch(url)
     output(myArray);
   })
 
-let heroArray = [];
-
-  function herooutput(heroArray) {
-    // Create elements and add attributes to the img element
-    let article = document.createElement('article');
-  
-    // grab JSON values then populate elements
-    let hname = document.createElement('h3');
-    hname.textContent = "Your Hero Name is:" + heroArray.name;
-  
-    let hrname = document.createElement('h3');
-    hrname.textContent = "Your Hero's Real Name is: " + heroArray.realName;
-  
-    // grab JSON values then populate elements
-  
-    article.appendChild(hname);
-    article.appendChild(hrname);
-  
-    document.querySelector('#hero_info').appendChild(article);
-  }
-  
-
-let herosurl = "https://spbooks.github.io/jsninja2/questions.json"
-
-fetch(herosurl)
-  .then((hresponse) => {
-    if (hresponse.ok) {
-      return hresponse.json();
-    } else {
-      console.log("error:", hresponse);
-    }
-  })
-  .then((herodata) => {
-    // pass JSON data to myArray array 
-    heroArray = herodata;
-    // console log for debug
-    console.log(heroArray);
-    // here is the funky callback where the output function walks through each line of myArray
-    // which holds the geolocation JSON data pulled in from fetch
-    herooutput(heroArray);
-  }) 
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(42.7046, -121.9959),
+        zoom: 14
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
