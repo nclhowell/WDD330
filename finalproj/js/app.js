@@ -14,9 +14,9 @@ let motd = "";
 //  if weekend day, set the message variable to Woohoo.. its the weekend and I still have homework to do! 
 
 if (day_today < 6 && day_today > 0) {
-  motd = "Not the weekend yet hang in there";
+  motd = "Not the weekend yet... hang in there";
 } else {
-  motd = "Woohoo....it's the weekend (but homework lurks)";
+  motd = "Woohoo....it's the weekend.. let's do something fun with the fam! ";
 }
 
 let dy = "";
@@ -49,65 +49,63 @@ switch (day_today) {
 
 // OUTPUT 
 
-// Step 1: Assign the value of the first message variable to the HTML element with an ID of message1
+// first message variable assigned to the HTML element with an ID of message1
 document.querySelector("#message1").innerHTML = motd;
 
-// Step 2: Assign the value of the second message variable to the HTML element with an ID of message2
+// second message variable to the HTML element with an ID of message2
 
 document.querySelector("#message2").innerHTML = dy;
 
-//Fetch
+//Fetch src geo info and populate GeoArray 
 
-// src geo info and shove it into the myArray 
+let GeoArray = [];
 
-let myArray = [];
-
-function output(myArray) {
+function output(GeoArray) {
   // Create elements and add attributes to the img element
   let article = document.createElement('article');
   let prevarticle = document.createElement('article');
 
   let lat = document.createElement('h3');
   let prevlat = document.createElement('h3');
-  lat.textContent = "Your lattitude is " + myArray.latitude;
+  lat.textContent = "Your lattitude is " + GeoArray.latitude;
   prevlat.textContent = "Your previous lattitude was " + localStorage.prevlat;
   // console.log(`Previous Latatude: ${localStorage.prevlat}`);
 
   let lon = document.createElement('h3');
   let prevlon = document.createElement('h3');
-  lon.textContent = "Your longitude is " + myArray.longitude;
+  lon.textContent = "Your longitude is " + GeoArray.longitude;
   prevlon.textContent = "Your previous longitude was " + localStorage.prevlon;
 
   let city = document.createElement('h3');
-  city.textContent = "Your city is " + myArray.city;
+  city.textContent = "Your city is " + GeoArray.city;
 
   let region_iso_code = document.createElement('h3');
-  region_iso_code.textContent = "Your State Code is: " + myArray.region_iso_code;
+  region_iso_code.textContent = "Your State Code is: " + GeoArray.region_iso_code;
 
   let region = document.createElement('h3');
-  region.textContent = "Your full state name is : " + myArray.region;
+  region.textContent = "Your full state name is : " + GeoArray.region;
 
   let isp = document.createElement('h3');
-  isp.textContent = "Your Internet Provider is: " + myArray.connection.isp_name;
+  isp.textContent = "Your Internet Provider is: " + GeoArray.connection.isp_name;
 
   let ip = document.createElement('h3');
-  ip.textContent = "Your Internet Address is: " + myArray.ip_address;
+  ip.textContent = "Your Internet Address is: " + GeoArray.ip_address;
 
   let con_type = document.createElement('h3');
-  con_type.textContent = "Your Connection Type is: " + myArray.connection.connection_type;
+  con_type.textContent = "Your Connection Type is: " + GeoArray.connection.connection_type;
 
   let country = document.createElement('h3');
-  country.textContent = "Your Country is: " + myArray.country;
+  country.textContent = "Your Country is: " + GeoArray.country;
 
   let img = document.createElement('img');
-  img.setAttribute('src', myArray.flag.png);
-  img.setAttribute('alt', myArray.country);
+  img.setAttribute('src', GeoArray.flag.png);
+  img.setAttribute('alt', GeoArray.country);
 
   // grab JSON values then populate elements
 
   article.appendChild(lat);
-  localStorage.setItem("prevlat", myArray.latitude);
-  localStorage.setItem("prevlon", myArray.longitude);
+  localStorage.setItem("prevlat", GeoArray.latitude);
+  localStorage.setItem("prevlon", GeoArray.longitude);
   prevarticle.appendChild(prevlat);
   prevarticle.appendChild(prevlon);
   article.appendChild(lon);
@@ -135,19 +133,19 @@ fetch(url)
     }
   })
   .then((data) => {
-    // pass JSON data to myArray array 
-    myArray = data;
+    // pass JSON data to GeoArray array 
+    GeoArray = data;
     // console log for debug
-    console.log(myArray);
-    // here is the funky callback where the output function walks through each line of myArray
+    console.log(GeoArray);
+    // here is the funky callback where the output function walks through each line of GeoArray
     // which holds the geolocation JSON data pulled in from fetch
-    output(myArray);
+    output(GeoArray);
   })
 
 function myMap() {
-    var mapProp = {
+    const mapProp = {
         center: new google.maps.LatLng(42.7046, -121.9959),
         zoom: 14
     };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    const map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }

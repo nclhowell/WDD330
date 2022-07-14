@@ -50,5 +50,9 @@
     {
         "menuitem": "sandbox+",
         "menulink": "./sandbox/animationforms"
+    },
+    {
+        "menuitem": "block 2 final proj",
+        "menulink": "./finalproj"
     }
 ]
