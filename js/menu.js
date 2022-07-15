@@ -2,9 +2,9 @@
 const menuitems = document.querySelector("menuitems");
 let menuarray = [];
 // git URL.  Use this when pushing to repo 
-const url = 'https://nclhowell.github.io/wdd330/data/menuitems.json';
+// const url = 'https://nclhowell.github.io/wdd330/data/menuitems.json';
 // local access to menuitems.json 
-// url = "./data/menuitems.json";
+const url = "./data/menuitems.json";
 let results = null;
 fetch(url)
     .then((response) => {

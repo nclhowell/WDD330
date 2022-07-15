@@ -1,0 +1,50 @@
+My reading notes.. Not alot of coding on this stuff this week..
+
+This week I got through the chapter on transforms.
+
+My questions is:  Can CSS transforms and transitions apply to jpeg or webp images or only to vector graphic elements?
+
+I am excited to add some of the transforms to my sandbox.  I also plan to play around with the spinning circles demoed in our office hours session.
+
+Seems like rotate does a ton of work for us.  I have coded graphical rotations using math formulas in Python (I think it was Cosine) and it was numerous lines of code
+
+For sure want to play with transform-origin and circles.  Will do that next week.
+
+Skipped the IE support sections...
+
+I want to test this out on some of my sandbox elements and pics:
+
+transition: transform 0.2s ease-out 50ms;
+
+
+This would be cool with text and border properties:
+
+transition-property: transform, color;
+transition-duration: 0.2s;
+transition-timing-function: ease-out;
+transition-delay: 50ms;
+
+keyframe animations look complicated.
+
+Love this pixel manipulation from color to B/W... Could be fun experimenting with different factors to change the colors..
+function manipulateImage() {
+for (var i = 0; i < imageData.data.length; i += 4) {
+red = imageData.data[i];
+green = imageData.data[i + 1];
+blue = imageData.data[i + 2];
+grayscale = red * 0.3 + green * 0.59 + blue * 0.11;
+}
+
+I bet that array can be huge with hi-rez images.
+
+Followed the SVG vs Canvas speed comparison... Visually undetectable.
+
+Now I know where the student got the drag n drop cat/mouse code!  Will play with that if time..
+
+
+
+
+
+
+
+

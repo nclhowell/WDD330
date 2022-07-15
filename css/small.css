@@ -1,11 +1,11 @@
 * {
-	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 30px;
 }
 
 body {
+	margin: 3em;
 	font-size: 1rem;
 	font-family: "Courgette", Ubuntu, sans-serif;
 	display: grid;
@@ -13,6 +13,13 @@ body {
 }
 
 /* phone (default) viewport size*/ 
+
+#menuitems {
+color: burlywood;
+}
+a {
+color: burlywood;
+}
 
 header, footer {
 	background-color: rgb(124, 158, 149);
@@ -22,6 +29,7 @@ header, footer {
 
 
 nav, main {
+	color: burlywood; 
 	background-color: rgb(46, 76, 68);
 	margin: 0 auto;
 }
@@ -83,9 +91,7 @@ main picture {
 footer {
 	height: 3.5rem;
 }
-bigheader {
-	font-size: 2rem;
-}
+
 img {
 	max-width: 200px;
 	max-height: 200px;

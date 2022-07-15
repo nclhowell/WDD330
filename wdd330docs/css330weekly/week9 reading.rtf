@@ -1,0 +1,66 @@
+Chap 9: The Window Object
+
+Still don't know much about Node.js (maybe it is a way to code Javascript for running on non browser environments?)
+
+Now I know why it is not encouraged to use any of the interrupt dialogues.  Sounds like best practice to avoid them.
+
+ I plan to learn about the window object and what methods are under window that we take for granted becuause we do not reference
+ window when we call them...
+
+ I noticed the replace() method is the one that tics me off when a retailer blocks the use of the back navigation to leaave
+a page that they may want you to remain on.
+
+this will be useful:
+const cookies = document.cookie.split("; ");
+for (crumb of cookies){
+const [key,value] = crumb.split("=");
+console.log(`The value of ${key} is ${value}`);
+}
+
+played around with document.cookie from the firefox inspector console.. nice test to see what different sites store in your browser.
+
+
+
+Tried this on my portfolio page console and only got the alert after page refresh
+window.setTimeout( () => alert("Time's Up!"), 3000);
+
+Made the rotating red square animation... both JS versions and the CSS version..
+
+Chap 14 HTML5 API'
+
+the data- construct is well explained and used by the Wes Bos drumkit example.  As a matter of info, I plan to fashion my final project on the drum-kit project however
+I may try to use JSON and LocalStorage to store the sounds and keycodes as opposed to defining the keys and sounds in the HTML.
+
+
+Love the Geo stuff...  Wrote this snippet and added a "latlong" div below the spinning cube.
+
+navigator.geolocation.getCurrentPosition(youAreHere);
+function youAreHere(position) {
+   console.log(`Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`)
+  document.getElementById("latlong").innerHTML = `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`;
+}
+
+Too bad the lat/long is the lat/long of my ISP 35 miles away!  Mobile device likely has a way to pull the GPS coordinates from the device.
+
+played with the notification scripts.. My browser blocked the dialogue however the console indicated a Promise state pending.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

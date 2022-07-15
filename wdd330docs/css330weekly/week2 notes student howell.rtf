@@ -1,0 +1,133 @@
+
+WDD 330 Student Howell Week 3 Notes from reading Novice to Ninja Chap's 2-4 (no need to document Chap 2)
+
+Splice seems way cool... I like the way it returns the value you are blasting, then replaces it with the new value... Seems like this would be 
+handy.  Also that splice can be a straight up insert without any replacement by using the splice(x,0 <value>) argument.  And..splice can 
+simply delete items!
+
+Set looks good for deduping.
+
+This may be a typo in the book.. shoud'nt the second argument be Set(duplicate)?
+
+const duplicate = [3, 1, 4, 1, 5, 9, 2, 6 ,5,3,5,9];<< [ 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9 ]
+const nonDuplicate = [...new Set(repeatedArray)];<< [ 3, 1, 4, 5, 9, 2, 6 ]
+
+
+I hope I never run into complex ternary code inside template literals.
+console.log(`n is a ${(n%2 === 0)? 'even' : 'odd'} number`);
+
+if (number === 4) {console.log('You rolled a four');} else if (number === 5) {console.log('You rolled a five');} else if(number === 6){console.log('You rolled a six');} else {console.log('You rolled a number less than four');}
+
+The switch operator can be used to make your code easier to follow whenthere are lots of conditions to test. 
+The example above can be rewritten usinga switch statement like so:
+
+switch (number) {
+case 4:console.log('You rolled a four');
+break;
+case 5:console.log('You rolled a five');
+break;
+case 6:console.log('You rolled a six');
+break
+default:console.log('You rolled a number less than four');
+break;
+}
+
+for(const value of avengers){
+console.log(value);
+}
+<< 'Black Widow'<< 'Captain America'<< 'Hawkeye'<< 'Iron Man'<< 'Quicksilver'<< 'Scarlet Witch'
+
+for(const letter of letters) {
+console.log(letter);
+}
+<< hello
+
+<< Map { 1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV', 5 => 'V' }
+for(const key of romanNumerals.keys()) {
+console.log(key);
+}
+<< 12345There is also a values() method that lets us iterate over the values in asimilar way:for(const value of RomanNumerals.values()) {console.log(value);}<< IIIIIIIVV
+
+If you want to access both the key and the value, you can use the entries()method:
+for(const [key,value] of RomanNumerals.entries()) {
+console.log(`${key} in Roman numerals is ${value}`);
+}
+
+<< 1 in Roman numerals is I
+2 in Roman numerals is II
+3 in Roman numerals is III
+4 in Roman numerals is IV
+5 in Roman numerals is V
+
+
+function rest(...args) {
+    for(arg of args){
+        console.log(arg);
+    }
+}
+rest(2,4,6,8);
+<< 2468
+
+function mean(...values) {
+    let total = 0;   for(const value of values) {
+        total += value;    
+}    
+return total/values.length;
+}
+
+// Handy way to have default 2nd argument.. no need to call function with both arg's.. just use the first for a default of 10% discount
+function discount(price, amount=10) {    return price*(100-amount)/100;}
+
+// Arrow functions can be identified by the 'arrow' symbol, => that gives them their name. The parameters come before the arrow 
+// and the main body of the function comes after. Arrow functions are always anonymous, so if you want to refer to them, you 
+// must assign them to a variable. For example, the square function we wrote earlier can be written like so:
+
+const square = x => x*x;
+
+Arrow functions have a number of advantages over other ways of declaring functions:
+
+    They are much less verbose than normal function declarations.
+    Single parameters don't need putting into parentheses.
+    The body of the function doesn't need placing inside a block if it's only one line.
+    The return keyword isn't required if the return statement is the only statement in the body of the function.
+    They don't bind their own value of this to the function (we'll see why this is a particularly useful property 
+    when we cover objects later in the book).
+
+In the square example above parameter, x didn't need to go in parentheses because it's the only parameter. 
+Multiple parameters need to go inside parentheses, for example, the following function adds two numbers together:
+
+const add = (x,y) => x + y;
+
+If the function doesn't require any parameters, a pair of empty parentheses must go before the arrow:
+
+const hello = () => alert('Hello World!');
+
+// Great arrow function foreach example
+
+colors.forEach( 
+(color,index) =>    console.log(`Color at position ${index}  is ${color}`) 
+);
+<<  "Color at position 0 is Red"    "Color at position 1 is Green"    "Color at position 2 is Blue"
+
+// Explanation of the Map method which can be used to process data from JSON API data..
+
+map()
+
+The map() method is very similar to the forEach() method. It also iterates over an array, and takes a callback function as a parameter that is invoked on each item in the array. This is often used to process data returned from databases in array form, such as adding HTML tags to plain text. The difference is that it returns a new array that replaces each value with the return value of the callback function. For example, we can square every number in an array using the square function we wrote previously as a callback to the map() method:
+
+[1,2,3].map( square )<< [1, 4, 9]
+
+An anonymous function can also be used as a callback. This example will double all the numbers in the array:
+
+[1,2,3].map( x => 2 * x);<< [2,4,6]
+
+The next example takes each item in the array and places them in uppercase inside paragraph HTML tags:
+
+['red','green','blue'].map( color => `<p> ${color.toUpperCase()}</p>` );<< ['<p>RED</p>', '<p>GREEN</p>', '<p>BLUE</p>']
+
+// Returns even numbers in an array
+const numbers = [ 2, 7, 6, 5, 11, 23, 12 ]
+numbers.filter(x => x%2 === 0 ); // this returns true if the number is even
+<< [ 2, 6, 12 ]
+
+

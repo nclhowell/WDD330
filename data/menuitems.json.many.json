@@ -1,0 +1,58 @@
+[
+    {
+        "menuitem": "lesson 1",
+        "menulink": "./lesson1"
+    },
+    {
+        "menuitem": "lesson 2",
+        "menulink": "./lesson2"
+    },
+    {
+        "menuitem": "lesson 3",
+        "menulink": "./lesson3"
+    },
+    {
+        "menuitem": "lesson 4",
+        "menulink": "./lesson4"
+    },
+    {
+        "menuitem": "lesson 5",
+        "menulink": "./lesson5"
+    },
+    {
+        "menuitem": "lesson 6",
+        "menulink": "./lesson6"
+    },
+    {
+        "menuitem": "lesson 7",
+        "menulink": "./lesson7"
+    },
+    {
+        "menuitem": "lesson 8",
+        "menulink": "./lesson8"
+    },
+    {
+        "menuitem": "lesson 9",
+        "menulink": "./lesson9"
+    },
+    {
+        "menuitem": "lesson 10",
+        "menulink": "./lesson10"
+    },
+    {
+        "menuitem": "lesson 11",
+        "menulink": "./lesson11"
+    },
+    {
+        "menuitem": "sandbox",
+        "menulink": "./sandbox"
+    },
+    {
+        "menuitem": "sandbox+",
+        "menulink": "./sandbox/animationforms"
+    },
+    {
+        "menuitem": "block 2 final proj",
+        "menulink": "./finalproj"
+    }
+]
