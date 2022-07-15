@@ -120,6 +120,7 @@ function output(GeoArray) {
 
   document.querySelector('#geoinfo').appendChild(article);
   document.querySelector('#prevgeoinfo').appendChild(prevarticle);
+
 }
 
 let url = "https://ipgeolocation.abstractapi.com/v1/?api_key=c3b5f6ec9f4e4920a988180cede6238c";
@@ -143,9 +144,48 @@ fetch(url)
   })
 
 function myMap() {
-    const mapProp = {
-        center: new google.maps.LatLng(42.7046, -121.9959),
-        zoom: 14
-    };
-    const map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  const mapProp = {
+    center: new google.maps.LatLng(42.7046, -121.9959),
+    zoom: 14
+  };
+  const map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
+
+
+let lat1 = 42.235636783840995
+let lon1 = -121.82698455870376
+
+document.getElementById("latlondist").innerText = `Placeholder for distance between points ${lat1}`;
+//document.getElementById("latlondist").innerText = `${GeoArray.latitude}`; 
+
+//let lat1 = parseFloat(GeoArray.latitude)
+//let lon1 = parseFloat(GeoArray.longitude)
+
+//let lat1 = GeoArray.latitude;
+//let lon1 = GeoArray.longitude;
+
+
+let lat2 = 42.70476653714137;
+let lon2 = -121.99581142189531;
+
+
+function distance(lat1, lon1, lat2, lon2) {
+  var p = 0.017453292519943295; // Math.PI / 180
+  var c = Math.cos;
+  var a = 0.5 - c((lat2 - lat1) * p) / 2 +
+    c(lat1 * p) * c(lat2 * p) *
+    (1 - c((lon2 - lon1) * p)) / 2;
+
+  return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
+}
+
+let distkm = distance(lat1, lon1, lat2, lon2)
+
+function kmtoMiles(distkm) {
+  distmiles = distkm * .62137;
+  let distmilesString = distmiles.toFixed(1).toString();
+  console.log(distmiles);
+  return distmilesString;
+}
+// console.log(toString(dist.toFixed(1)));
+// document.getElementById("latlondist").innerText = `${distmilesString}`; 
