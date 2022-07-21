@@ -26,8 +26,10 @@ main {
     height: 500px;
     width: 800px;
 }
-
-.container {
+article {
+    color:rgb(80, 139, 107);
+}
+.boxcontainer {
     width: 150px;
     height: 150px;
     position: relative;
@@ -35,6 +37,7 @@ main {
 }
 
 .columngrid {
+max-width: 100%;
 border: 10px solid rgba(1, 1, 114, 0.902);
 background-color: rgb(13, 13, 14);
 opacity: .8;
@@ -48,7 +51,7 @@ margin: 1em;
     color:rgba(115, 71, 12, 0.823)
 }
 
-/*.box {
+.box {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -56,12 +59,29 @@ margin: 1em;
     left: 0;
     opacity: 0.7;
     background: #0057e3;
-}*/
+    border-radius: 10%;
+}
 
 .overlay {
     z-index: 9;
     margin: 30px;
     background: #009938;
+    transition: transform 2.5s;
+    border-radius: 10%;
+}
+.overlay:hover {
+    z-index: 12;
+    background:#009938;
+    animation-name: boxcolors;
+    animation-duration: 2.5s;
+    transform: rotate(360deg);}
+@keyframes boxcolors {
+    /* from {background-color: rgb(33, 142, 42);}*/
+    from {background-color: transparent;}
+    to {background-color: #009938;}
+    /*to {background-color: transparent;}*/
+    /*to {background-color: rgb(213, 209, 204);}*/
+    
 }
 
 article {
@@ -83,6 +103,7 @@ div {
 }
 
 footer {
+    font-size: 2em; 
     background-color: gray;
     color: white;
     padding: 5px;

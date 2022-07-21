@@ -1,0 +1,21 @@
+@media only screen and (min-width: 780px) {
+
+#googleMap {
+    border-radius: 3%;
+    height: 500px;
+    width: 800px;
+}
+article {
+    color:rgb(80, 139, 107);
+}
+.boxcontainer {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 30px;
+}
+
+.columngrid {
+font-size: 2rem;
+}
+}

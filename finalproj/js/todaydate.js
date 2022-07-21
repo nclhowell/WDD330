@@ -17,4 +17,6 @@ let minutes = current_date.getMinutes()
 let seconds = current_date.getSeconds()
 
 // Dom update footer with today's date
-document.querySelector("#todaydate").innerHTML = `Last Updated ${month_today}/${current_day}/${year_today} ${hour}:${minutes}:${seconds}`;
+// lastupdate =  `Last Updated ${month_today}/${current_day}/${year_today} ${hour}:${minutes}:${seconds}`;
+document.getElementById("todaydate").innerHTML = `Last Updated ${month_today}/${current_day}/${year_today} ${hour}:${minutes}:${seconds}`;
+// document.getElementById("todaydate").innerHTML = `What is going on?`;

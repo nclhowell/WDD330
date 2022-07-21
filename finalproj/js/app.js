@@ -1,4 +1,11 @@
-// Declare and initialize a new variable to hold the current date
+/* Todos:
+DONE lat/long to render map based upon default lat/long from isp.
+DONE fix CSS for medium and large screens
+fix background image to fill screen
+move todaydate module in different .js export and include in this file
+*/
+// document.getElementById("todaydate").innerHTML = lastupdate
+
 let date_today = new Date();
 
 // Declare another variable to hold the day of the week
@@ -67,14 +74,14 @@ function output(GeoArray) {
 
   let lat = document.createElement('h3');
   let prevlat = document.createElement('h3');
-  lat.textContent = "Your lattitude is " + GeoArray.latitude;
-  prevlat.textContent = "Your previous lattitude was " + localStorage.prevlat;
+  lat.textContent = "Your ISP lattitude is " + GeoArray.latitude;
+  prevlat.textContent = "Your previous ISP lattitude was " + localStorage.prevlat;
   // console.log(`Previous Latatude: ${localStorage.prevlat}`);
 
   let lon = document.createElement('h3');
   let prevlon = document.createElement('h3');
-  lon.textContent = "Your longitude is " + GeoArray.longitude;
-  prevlon.textContent = "Your previous longitude was " + localStorage.prevlon;
+  lon.textContent = "Your ISP longitude is " + GeoArray.longitude;
+  prevlon.textContent = "Your previous ISP longitude was " + localStorage.prevlon;
 
   let city = document.createElement('h3');
   city.textContent = "Your city is " + GeoArray.city;
@@ -86,7 +93,7 @@ function output(GeoArray) {
   region.textContent = "Your full state name is : " + GeoArray.region;
 
   let isp = document.createElement('h3');
-  isp.textContent = "Your Internet Provider is: " + GeoArray.connection.isp_name;
+  isp.textContent = "Your Internet Provider (ISP) is: " + GeoArray.connection.isp_name;
 
   let ip = document.createElement('h3');
   ip.textContent = "Your Internet Address is: " + GeoArray.ip_address;
@@ -104,8 +111,8 @@ function output(GeoArray) {
   // grab JSON values then populate elements
 
   article.appendChild(lat);
-  localStorage.setItem("prevlat", GeoArray.latitude);
-  localStorage.setItem("prevlon", GeoArray.longitude);
+  localStorage.setItem("currentlat", GeoArray.latitude);
+  localStorage.setItem("currentlon", GeoArray.longitude);
   prevarticle.appendChild(prevlat);
   prevarticle.appendChild(prevlon);
   article.appendChild(lon);
@@ -116,10 +123,12 @@ function output(GeoArray) {
   article.appendChild(ip);
   article.appendChild(con_type);
   article.appendChild(country);
-  // article.appendChild(img);
+  article.appendChild(img);
 
+  article.setAttribute("color", "green");
   document.querySelector('#geoinfo').appendChild(article);
   document.querySelector('#prevgeoinfo').appendChild(prevarticle);
+
 
 }
 
@@ -130,7 +139,7 @@ fetch(url)
     if (response.ok) {
       return response.json();
     } else {
-      console.log("error:", response);
+      // console.log("error:", response);
     }
   })
   .then((data) => {
@@ -138,54 +147,34 @@ fetch(url)
     GeoArray = data;
     // console log for debug
     console.log(GeoArray);
-    // here is the funky callback where the output function walks through each line of GeoArray
+
+    // here is the callback where the output function walks through each line of GeoArray
     // which holds the geolocation JSON data pulled in from fetch
     output(GeoArray);
   })
 
+let isplat = 42.7046
+let isplon = -121.9959
+// let isplat = parseFloat(GeoArray.latitude);
+// let isplon = parseFloat(GeoArray.longitude);
+
+isplat = parseFloat(localStorage.currentlat);
+isplon = parseFloat(localStorage.currentlon);
+
+// let maplat = 43.9285
+// let maplon = -116.1839 
+
+localStorage.setItem("prevlat", localStorage.currentlat);
+localStorage.setItem("prevlon", localStorage.currentlon);
+
+
 function myMap() {
   const mapProp = {
-    center: new google.maps.LatLng(42.7046, -121.9959),
+    center: {
+      lat: isplat,
+      lng: isplon
+    },
     zoom: 14
   };
   const map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
-
-
-let lat1 = 42.235636783840995
-let lon1 = -121.82698455870376
-
-document.getElementById("latlondist").innerText = `Placeholder for distance between points ${lat1}`;
-//document.getElementById("latlondist").innerText = `${GeoArray.latitude}`; 
-
-//let lat1 = parseFloat(GeoArray.latitude)
-//let lon1 = parseFloat(GeoArray.longitude)
-
-//let lat1 = GeoArray.latitude;
-//let lon1 = GeoArray.longitude;
-
-
-let lat2 = 42.70476653714137;
-let lon2 = -121.99581142189531;
-
-
-function distance(lat1, lon1, lat2, lon2) {
-  var p = 0.017453292519943295; // Math.PI / 180
-  var c = Math.cos;
-  var a = 0.5 - c((lat2 - lat1) * p) / 2 +
-    c(lat1 * p) * c(lat2 * p) *
-    (1 - c((lon2 - lon1) * p)) / 2;
-
-  return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
-}
-
-let distkm = distance(lat1, lon1, lat2, lon2)
-
-function kmtoMiles(distkm) {
-  distmiles = distkm * .62137;
-  let distmilesString = distmiles.toFixed(1).toString();
-  console.log(distmiles);
-  return distmilesString;
-}
-// console.log(toString(dist.toFixed(1)));
-// document.getElementById("latlondist").innerText = `${distmilesString}`; 
