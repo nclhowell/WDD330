@@ -5,7 +5,6 @@ main {
     color:burlywood;
     font-size: 2rem;
     margin: 4em;
-
 }
 
 #screenoverlay {
@@ -129,50 +128,6 @@ label {
 }
 
 
-nav {
-    background-color: black;
-    color: white;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li:first-child {
-    display: block;
-}
-
-nav ul li {
-    display: none;
-    list-style: none;
-    margin: 10px;
-}
-
-nav ul li a {
-    color: white;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #efefef;
-    color: black;
-}
-
-.active {
-    background-color: white;
-    color: black;
-}
-
-.open li {
-    display: block;
-}
 form fieldset {
 	margin: 2rem 0;
 	border: 4px solid rgb(80, 139, 107);

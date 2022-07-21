@@ -1,9 +1,5 @@
-/* Todos:
-DONE lat/long to render map based upon default lat/long from isp.
-DONE fix CSS for medium and large screens
-fix background image to fill screen
-move todaydate module in different .js export and include in this file
-*/
+//  This program pulls your ISP data and sends it to Google Maps to render a map centered on your ISP's Lat/Long
+//  We also have demo of advanced CSS transition effects and simple Form Validation 
 // document.getElementById("todaydate").innerHTML = lastupdate
 
 let date_today = new Date();
@@ -54,7 +50,6 @@ switch (day_today) {
 }
 
 
-// OUTPUT 
 
 // first message variable assigned to the HTML element with an ID of message1
 document.querySelector("#message1").innerHTML = motd;
@@ -76,7 +71,6 @@ function output(GeoArray) {
   let prevlat = document.createElement('h3');
   lat.textContent = "Your ISP lattitude is " + GeoArray.latitude;
   prevlat.textContent = "Your previous ISP lattitude was " + localStorage.prevlat;
-  // console.log(`Previous Latatude: ${localStorage.prevlat}`);
 
   let lon = document.createElement('h3');
   let prevlon = document.createElement('h3');
@@ -132,6 +126,8 @@ function output(GeoArray) {
 
 }
 
+// abstractapi.. low priced subscription api which pulls your isp info and provides it in JSON format
+
 let url = "https://ipgeolocation.abstractapi.com/v1/?api_key=c3b5f6ec9f4e4920a988180cede6238c";
 
 fetch(url)
@@ -153,10 +149,7 @@ fetch(url)
     output(GeoArray);
   })
 
-// let isplat = 42.7046
-// let isplon = -121.9959
-// let isplat = parseFloat(GeoArray.latitude);
-// let isplon = parseFloat(GeoArray.longitude);
+// pull current isp lat/long which was pushed to local storage when isp info was loaded 
 
 isplat = parseFloat(localStorage.currentlat);
 isplon = parseFloat(localStorage.currentlon);
