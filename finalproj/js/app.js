@@ -153,8 +153,8 @@ fetch(url)
     output(GeoArray);
   })
 
-let isplat = 42.7046
-let isplon = -121.9959
+// let isplat = 42.7046
+// let isplon = -121.9959
 // let isplat = parseFloat(GeoArray.latitude);
 // let isplon = parseFloat(GeoArray.longitude);
 
