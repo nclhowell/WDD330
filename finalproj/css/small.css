@@ -26,6 +26,10 @@ main {
     height: 500px;
     width: 800px;
 }
+#maplabel
+{
+color: burlywood;
+}
 article {
     color:rgb(80, 139, 107);
 }
@@ -89,8 +93,6 @@ article {
 }
 
 body {
-   /* max-width: 80%;
-    max-height: 80%;*/
     background-image: url("../img/fat-data/bigCraterlake.jpg");
     background-size: auto;
     box-sizing: border-box;
